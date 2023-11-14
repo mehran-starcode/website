@@ -15,6 +15,12 @@ def fullName():
 
 ![Bugatti](https://myoctocat.com/assets/images/base-octocat.svg)
 
+![npm downloads](https://img.shields.io/npm/dw/express)
+
+![](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+
+___
+![](https://github-readme-streak-stats.herokuapp.com/mehran-starcode)
 
 ## Hi Mehran
 ### Hi Mehran

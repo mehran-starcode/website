@@ -328,7 +328,7 @@ body{
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
-    top: 3.5vh;
+    top: 3.9vh;
     left: -.03vw;
     overflow: hidden;
 }
@@ -383,25 +383,25 @@ body{
 
 
 #mainPage_nav_li_details_gallery{
-    top: 3.5vh;
+    top: 3.9vh;
     left: -.03vw;
 
 }
 
 #mainPage_nav_li_details_articles{
-    top: 3.5vh;
+    top: 3.9vh;
     left: -.04vw;
 
 }
 
 #mainPage_nav_li_details_aboutus{
-    top: 3.5vh;
+    top: 3.9vh;
     left: -.03vw;
 
 }
 
 #mainPage_nav_li_details_callus{
-    top: 3.5vh;
+    top: 3.9vh;
     left: -.03vw;
 
 }

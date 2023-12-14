@@ -53,11 +53,15 @@ body #mainPage #header {
 }
 #banner {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 #banner video {
   width: 100%;
+}
+#banner #headerBanner {
+  color: bisque;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+
+    #btn-container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+
+
+        #headerBanner{
+            position: absolute;
+            background-color: red;
+            padding: 10px;
+            color: black;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 210px;
+            z-index: 1;
+        }
+
+        img{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+        }
+
+    }
+
+
+}
+
+
+

@@ -5,21 +5,13 @@ import * as navbar from "./navbar.js";
 import * as content from "./content.js";
 import * as sidebar from "./sidebar.js";
 import * as footer from "./footer.js";
+// ----------------------------------  [ELs] && [STs]  ------------------------------------
+const bannerVideo_EL = document.querySelector('#banner > video')
 // ---------------------------------------- Body  -----------------------------------------
-const bodyEL = document.querySelector('body');
-const background_img_h1_EL = document.querySelector('#btn-container > img');
-const btn_grinder_EL = document.querySelector('#headerBanner');
 
-
-btn_grinder_EL.addEventListener('click',event=>{
-    background_img_h1_EL.style.animation = 'fullScreen 1s'
-    background_img_h1_EL.style.animationFillMode = 'forwards'
+window.addEventListener('load',event=>{
+    bannerVideo_EL.play()
 })
-
-
-
-
-
 
 
 

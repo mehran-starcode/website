@@ -1,0 +1,19 @@
+@keyframes fullScreen {
+    to{
+        width: 6000px;
+        height: 6000px;
+    }
+}
+
+
+@keyframes magnifierFont {          // بزرگ کننده اندازه فونت
+    to{
+        font-size: 45px;
+    }
+}
+
+@keyframes shrinkerFont {          // کوچک کننده اندازه فونت
+    to{
+        font-size: 20px;
+    }
+}

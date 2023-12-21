@@ -1,0 +1,27 @@
+//  ******  global files  ******
+@import "ResetStyle";
+@import "Fonts";
+@import "Variables";
+@import "KeyFrames";
+@import "Mixins";
+//  ******   mainPage   files  ******
+@import "../Pages/mainPage/base";
+@import "../Pages/mainPage/Include/navbar";
+@import "../Pages/mainPage/Include/banner";
+//  ******  secondPage  files  ******
+@import "../Pages/secondPage/base";
+@import "../Pages/secondPage/Include/navbar";
+@import "../Pages/secondPage/Include/banner";
+// -----------------------------------------------------------------------
+
+
+
+body{
+  .mainPage{
+
+  }
+  .secondPage{
+
+  }
+}
+

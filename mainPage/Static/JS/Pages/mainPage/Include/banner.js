@@ -1,12 +1,7 @@
 'use strict'
 // -------------------------------------  Imports ----------------------------------------
-import * as navbar from "./navbar.js";
-import * as main from "./main.js";
-import * as content from "./content.js";
-import * as sidebar from "./sidebar.js";
-import * as footer from "./footer.js";
-// ----------------------------------  [ELs] && [STs]  ------------------------------------
-
+import * as main from "../../../Master/main.js";
+import * as Variables from "./banner_Variables.js";
 // ---------------------------------------- Body  -----------------------------------------
 
 
@@ -17,6 +12,7 @@ import * as footer from "./footer.js";
 
 
 
-
 // ---------------------------------------  Exports  -----------------------------------------
-export {}
+export {
+    Variables
+}

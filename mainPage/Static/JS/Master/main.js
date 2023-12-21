@@ -1,12 +1,9 @@
 'use strict'
 // -------------------------------------  Imports ----------------------------------------
-import * as navbar from "./navbar.js";
-import * as banner from "./banner.js";
-import * as content from "./content.js";
-import * as main from "./main.js";
-import * as footer from "./footer.js";
-// ----------------------------------  [ELs] && [STs]  ------------------------------------
-
+import * as DataBase from "./DataBase.js";
+import * as Variables from "./main_Variables.js";
+import * as mainPage from "../Pages/mainPage/mainPage.js";
+import * as secondPage from "../Pages/secondPage/secondPage.js";
 // ---------------------------------------- Body  -----------------------------------------
 
 
@@ -19,4 +16,6 @@ import * as footer from "./footer.js";
 
 
 // ---------------------------------------  Exports  -----------------------------------------
-export {}
+export {
+    DataBase, mainPage, secondPage,Variables
+}

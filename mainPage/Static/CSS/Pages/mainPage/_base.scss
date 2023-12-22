@@ -1,17 +1,24 @@
-.mainPage{
+.mainPage .navigable_container{
     .header{
-
-    }
-    .main{
-        .content{
-
-        }
-        .sidebar{
     
-        }
     }
+    
+    .content{
+    
+    }
+    
     .footer{
     
     }
 
+}
+
+
+.mainPage .fixed_container{
+    .navbar{
+    
+    }
+    .sidebar{
+    
+    }
 }

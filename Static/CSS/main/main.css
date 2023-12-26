@@ -51,4 +51,11 @@ font-family: 'Vina Sans', sans-serif;
 }
 .mainPage .topNavbar .sidebar { /*  Initialized in its Own File  */ }
 
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+}
+
 /*# sourceMappingURL=main.css.map */

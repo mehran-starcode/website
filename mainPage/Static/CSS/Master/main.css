@@ -47,7 +47,7 @@ body {
   height: 100%;
   background-color: #262626;
 }
-body .mainPage {
+body div.mainPage {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -55,7 +55,7 @@ body .mainPage {
   height: 100%;
   z-index: 2;
 }
-body .mainPage .navigable_container {
+body div.mainPage div.navigable_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,14 +68,14 @@ body .mainPage .navigable_container {
   margin-top: 0.8vh;
   z-index: 2;
 }
-body .mainPage .fixed_container {
+body div.mainPage div.fixed_container {
   position: absolute;
   width: 100%;
   height: 100%;
   background: url("../../Media/Images/background/543388.jpg");
   z-index: 1;
 }
-body .secondPage {
+body div.secondPage {
   position: absolute;
   width: 100%;
   height: 100%;

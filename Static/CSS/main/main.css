@@ -1,3 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Vina+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Behdad";
+  src: url("//cdn.font-store.ir/fonts/behdad/Behdad-Regular.woff2") format("woff2"), url("//cdn.font-store.ir/fonts/behdad/Behdad-Regular.woff") format("woff"), url("//cdn.font-store.ir/fonts/behdad/Behdad-Regular.ttf") format("truetype"), url("//cdn.font-store.ir/fonts/behdad/Behdad-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Vina Sans', sans-serif;
+*/
+@keyframes fullScreen {
+  to {
+    width: 6000px;
+    height: 6000px;
+  }
+}
+@keyframes magnifierFont {
+  to {
+    font-size: 45px;
+  }
+}
+@keyframes shrinkerFont {
+  to {
+    font-size: 20px;
+  }
+}
+@keyframes opacity_to_one {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacity_to_ziro {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .mainPage .topNavbar .sidebar { /*  Initialized in its Own File  */ }
 
 /*# sourceMappingURL=main.css.map */

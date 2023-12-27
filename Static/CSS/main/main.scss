@@ -7,39 +7,74 @@
 //  ******   mainPage   files  ******
 @import "../mainPage/topNavbar";                       //  نوارپیمایش بالایی سایت
 @import "../mainPage/banner";                          //  بنر سایت
-@import "../mainPage/products_categori";               //  دسته بندی محصولات
-@import "../mainPage/amazing_offer";                   //  پیشنهاد شگفت انگیز
-@import "../mainPage/best_selling";                    //  پرفروش ترین ها
+@import "../mainPage/productsCategori";               //  دسته بندی محصولات
+@import "../mainPage/amazingOffer";                   //  پیشنهاد شگفت انگیز
+@import "../mainPage/bestSelling";                    //  پرفروش ترین ها
 @import "../mainPage/articles";                        //  مقالات
-@import "../mainPage/mainFooter";                      //  پاورقی سایت
+@import "../mainPage/footer";                      //  پاورقی سایت
 @import "../mainPage/bottomNavbar";                    //  نوارپیمایشی پایینی سایت
 // -----------------------------------------------------------------------
 
+
 body{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: bisque;
-    
-    //---------------
+    width: 100vw;
+    height: 100dvh;
+    background-color: red;
+    //-----------------------
     .mainPage{
-        
-        
-        
-        
-        //-----------------
-        .header{
-        
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        background-color: $color-light;
+        overflow: hidden;
+        //-------------------------
+        .topNavbar{
+            width: 100%;
+            height: 8%;
+            background-color: red;
+            //-------------------------
+            aside.sidebar{/*   Initialized in its Own File   */}
+            a.websiteLogo{
+            
+            }
+            div.profile{/*   Initialized in its Own File   */}
+            //-------------------------
         }
-        .content{
-        
-        
+        .dynamicCont{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            //-------------------------
+            header{
+                
+                //-------------------------
+                div.banner{/*   Initialized in its Own File   */}
+                div.scrollBrands{/*   Initialized in its Own File   */}
+                //-------------------------
+            }
+            main{
+                
+                //-------------------------
+                div.productsCategori{/*   Initialized in its Own File   */}
+                div.amazingOffer{/*   Initialized in its Own File   */}
+                div.bestSelling{/*   Initialized in its Own File   */}
+                div.articles{/*   Initialized in its Own File   */}
+                //-------------------------
+            }
+            footer{
+                
+                //-------------------------
+                //-------------------------
+            }
+            //-------------------------
         }
-        .footer{
-        
-        
+        .bottomNavbar{
+            /*   Initialized in its Own File   */
         }
+
     }
 
 }

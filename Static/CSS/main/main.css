@@ -52,10 +52,40 @@ font-family: 'Vina Sans', sans-serif;
 .mainPage .topNavbar .sidebar { /*  Initialized in its Own File  */ }
 
 body {
-  position: fixed;
+  width: 100vw;
+  height: 100dvh;
+  background-color: red;
+}
+body .mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   width: 100%;
   height: 100%;
-  background-color: bisque;
+  background-color: #e8d8c3;
+  overflow: hidden;
+}
+body .mainPage .topNavbar {
+  width: 100%;
+  height: 8%;
+  background-color: red;
+}
+body .mainPage .topNavbar aside.sidebar { /*   Initialized in its Own File   */ }
+body .mainPage .topNavbar div.profile { /*   Initialized in its Own File   */ }
+body .mainPage .dynamicCont {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+body .mainPage .dynamicCont header div.banner { /*   Initialized in its Own File   */ }
+body .mainPage .dynamicCont header div.scrollBrands { /*   Initialized in its Own File   */ }
+body .mainPage .dynamicCont main div.productsCategori { /*   Initialized in its Own File   */ }
+body .mainPage .dynamicCont main div.amazingOffer { /*   Initialized in its Own File   */ }
+body .mainPage .dynamicCont main div.bestSelling { /*   Initialized in its Own File   */ }
+body .mainPage .dynamicCont main div.articles { /*   Initialized in its Own File   */ }
+body .mainPage .bottomNavbar {
+  /*   Initialized in its Own File   */
 }
 
 /*# sourceMappingURL=main.css.map */

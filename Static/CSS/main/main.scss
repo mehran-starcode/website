@@ -6,12 +6,13 @@
 @import "Mixins";
 //  ******   mainPage   files  ******
 @import "../mainPage/topNavbar";                       //  نوارپیمایش بالایی سایت
+@import "../mainPage/sidebar";                         //  نوار کناری سایت
 @import "../mainPage/banner";                          //  بنر سایت
-@import "../mainPage/productsCategori";               //  دسته بندی محصولات
-@import "../mainPage/amazingOffer";                   //  پیشنهاد شگفت انگیز
-@import "../mainPage/bestSelling";                    //  پرفروش ترین ها
+@import "../mainPage/productsCategori";                //  دسته بندی محصولات
+@import "../mainPage/amazingOffer";                    //  پیشنهاد شگفت انگیز
+@import "../mainPage/bestSelling";                     //  پرفروش ترین ها
 @import "../mainPage/articles";                        //  مقالات
-@import "../mainPage/footer";                      //  پاورقی سایت
+@import "../mainPage/footer";                          //  پاورقی سایت
 @import "../mainPage/bottomNavbar";                    //  نوارپیمایشی پایینی سایت
 // -----------------------------------------------------------------------
 
@@ -21,7 +22,7 @@ body{
     height: 100dvh;
     background-color: red;
     //-----------------------
-    .mainPage{
+    div.mainPage{
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -30,33 +31,24 @@ body{
         background-color: $color-light;
         overflow: hidden;
         //-------------------------
-        .topNavbar{
-            width: 100%;
-            height: 8%;
-            background-color: red;
-            //-------------------------
-            aside.sidebar{/*   Initialized in its Own File   */}
-            a.websiteLogo{
-            
-            }
-            div.profile{/*   Initialized in its Own File   */}
-            //-------------------------
-        }
-        .dynamicCont{
+        div.dynamicCont{
             display: flex;
             width: 100%;
             height: 100%;
             overflow-y: auto;
+            background: url("../../Media/Images/banner/World Travel Wallpapers_YasDL.com (6).jpg");
             //-------------------------
             header{
-                
+                position: relative;
+                width: 100%;
                 //-------------------------
+                div.topNavbar{/*   Initialized in its Own File   */}
                 div.banner{/*   Initialized in its Own File   */}
                 div.scrollBrands{/*   Initialized in its Own File   */}
                 //-------------------------
             }
             main{
-                
+                height: 1000px;
                 //-------------------------
                 div.productsCategori{/*   Initialized in its Own File   */}
                 div.amazingOffer{/*   Initialized in its Own File   */}
@@ -72,7 +64,9 @@ body{
             //-------------------------
         }
         .bottomNavbar{
-            /*   Initialized in its Own File   */
+            width: 100%;
+            height: 10%;
+            background-color: blue;
         }
 
     }

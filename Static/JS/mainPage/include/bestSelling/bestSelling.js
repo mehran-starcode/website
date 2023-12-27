@@ -1,6 +1,6 @@
 'use strict'
 // -------------------------------------  Imports ----------------------------------------
-import * as main from "../../main/main.js";
+import * as main from "../../../main/main.js";
 import * as Variables from "./bestSelling_Variables";
 // ---------------------------------------- Body  -----------------------------------------
 

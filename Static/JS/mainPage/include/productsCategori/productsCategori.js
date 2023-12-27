@@ -1,7 +1,7 @@
 'use strict'
 // -------------------------------------  Imports ----------------------------------------
-import * as main from "../../main/main.js";
-import * as Variables from "./sidebar_Variables";
+import * as main from "../../../main/main.js";
+import * as Variables from "./productsCategori_Variables";
 // ---------------------------------------- Body  -----------------------------------------
 
 

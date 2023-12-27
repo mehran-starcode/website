@@ -49,14 +49,72 @@ font-family: 'Vina Sans', sans-serif;
     opacity: 0;
   }
 }
-.mainPage .topNavbar .sidebar { /*  Initialized in its Own File  */ }
+.mainPage .topNavbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7.5%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 1%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
+}
+.mainPage .topNavbar aside.sidebar { /*  Initialized in its Own File  */ }
+.mainPage .topNavbar a.websiteLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.mainPage .topNavbar a.websiteLogo img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: green;
+}
+.mainPage .topNavbar div.profile { /*  Initialized in its Own File  */ }
+
+.mainPage .sidebar {
+  width: 45px;
+  height: 45px;
+}
+.mainPage .sidebar div.sidebarIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  height: 80%;
+  margin-top: 10px;
+  margin-left: -6px;
+  border: #e8d8c3 solid 2px;
+  border-radius: 100%;
+  padding: 7px;
+  opacity: 0.8;
+}
+.mainPage .sidebar div.sidebarIcon .pip {
+  width: 100%;
+  height: 10%;
+  background-color: #e8d8c3;
+  border-radius: 100px;
+}
+.mainPage .sidebar div.sidebarIcon .middle-pip {
+  display: none;
+}
+.mainPage .banner {
+  width: 100%;
+  height: 40vh;
+  background-color: #e8d8c3;
+}
+
+.mainPage .bottomNavbar {
+  /*   Initialized from Upstream   */
+}
 
 body {
   width: 100vw;
   height: 100dvh;
   background-color: red;
 }
-body .mainPage {
+body div.mainPage {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -65,27 +123,31 @@ body .mainPage {
   background-color: #e8d8c3;
   overflow: hidden;
 }
-body .mainPage .topNavbar {
-  width: 100%;
-  height: 8%;
-  background-color: red;
-}
-body .mainPage .topNavbar aside.sidebar { /*   Initialized in its Own File   */ }
-body .mainPage .topNavbar div.profile { /*   Initialized in its Own File   */ }
-body .mainPage .dynamicCont {
+body div.mainPage div.dynamicCont {
   display: flex;
   width: 100%;
   height: 100%;
   overflow-y: auto;
+  background: url("../../Media/Images/banner/World Travel Wallpapers_YasDL.com (6).jpg");
 }
-body .mainPage .dynamicCont header div.banner { /*   Initialized in its Own File   */ }
-body .mainPage .dynamicCont header div.scrollBrands { /*   Initialized in its Own File   */ }
-body .mainPage .dynamicCont main div.productsCategori { /*   Initialized in its Own File   */ }
-body .mainPage .dynamicCont main div.amazingOffer { /*   Initialized in its Own File   */ }
-body .mainPage .dynamicCont main div.bestSelling { /*   Initialized in its Own File   */ }
-body .mainPage .dynamicCont main div.articles { /*   Initialized in its Own File   */ }
-body .mainPage .bottomNavbar {
-  /*   Initialized in its Own File   */
+body div.mainPage div.dynamicCont header {
+  position: relative;
+  width: 100%;
+}
+body div.mainPage div.dynamicCont header div.topNavbar { /*   Initialized in its Own File   */ }
+body div.mainPage div.dynamicCont header div.banner { /*   Initialized in its Own File   */ }
+body div.mainPage div.dynamicCont header div.scrollBrands { /*   Initialized in its Own File   */ }
+body div.mainPage div.dynamicCont main {
+  height: 1000px;
+}
+body div.mainPage div.dynamicCont main div.productsCategori { /*   Initialized in its Own File   */ }
+body div.mainPage div.dynamicCont main div.amazingOffer { /*   Initialized in its Own File   */ }
+body div.mainPage div.dynamicCont main div.bestSelling { /*   Initialized in its Own File   */ }
+body div.mainPage div.dynamicCont main div.articles { /*   Initialized in its Own File   */ }
+body div.mainPage .bottomNavbar {
+  width: 100%;
+  height: 10%;
+  background-color: blue;
 }
 
 /*# sourceMappingURL=main.css.map */

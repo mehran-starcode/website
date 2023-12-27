@@ -1,7 +1,7 @@
 'use strict'
 // -------------------------------------  Imports ----------------------------------------
-import * as main from "../../main/main.js";
-import * as Variables from "./bottomNavbar_Variables";
+import * as main from "../../../main/main.js";
+import * as Variables from "./scrollBrands_Variables";
 // ---------------------------------------- Body  -----------------------------------------
 
 

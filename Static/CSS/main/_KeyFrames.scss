@@ -33,3 +33,34 @@
         opacity: 0;
     }
 }
+
+
+
+@keyframes margin-bottom-pip---0 {
+    to{
+        margin-bottom: -2px;
+    }
+}
+@keyframes margin-bottom-pip---4px {
+    from{
+        margin-bottom: 0;
+    }
+    to{
+        margin-bottom: 4px;
+    }
+}
+
+
+@keyframes margin-top-pip---0 {
+    to{
+        margin-top: -1px;
+    }
+}
+@keyframes margin-top-pip---4px {
+    from{
+        margin-top: 0;
+    }
+    to{
+        margin-top: 4px;
+    }
+}

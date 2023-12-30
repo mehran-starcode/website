@@ -1,7 +1,7 @@
 'use strict'
 // -------------------------------------  Imports ----------------------------------------
 import * as main from "../../../main/main.js";
-import * as Variables from "./banner_Variables";
+import * as Variables from "./banner_Variables.js";
 // ---------------------------------------- Body  -----------------------------------------
 
 

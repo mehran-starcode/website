@@ -1,3 +1,5 @@
+@import "../main/ColorPalettes";
+
 .mainPage .sidebar{
     width: 45px;
     height: 45px;
@@ -8,7 +10,8 @@
     div.sidebarIcon{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         width: 80%;
         height: 80%;
         margin-top: 10px;
@@ -17,17 +20,26 @@
         border-radius: 100%;
         padding: 7px;
         opacity: .8;
-        
+
+        .top-pip{
+            
+            margin-bottom: 4px;
+        }
+        .bottom-pip{
+            
+            margin-top: 4px;
+        }
         
         .pip{
-            width: 100%;
+            width: 110%;
             height: 10%;
             background-color: $color-light;
             border-radius: 100px;
+            
         }
         
         .middle-pip{
-            display: none;
+            //display: none;
         }
         
         

@@ -49,6 +49,32 @@ font-family: 'Vina Sans', sans-serif;
     opacity: 0;
   }
 }
+@keyframes margin-bottom-pip---0 {
+  to {
+    margin-bottom: -2px;
+  }
+}
+@keyframes margin-bottom-pip---4px {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 4px;
+  }
+}
+@keyframes margin-top-pip---0 {
+  to {
+    margin-top: -1px;
+  }
+}
+@keyframes margin-top-pip---4px {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 4px;
+  }
+}
 .mainPage .topNavbar {
   position: fixed;
   display: flex;
@@ -80,7 +106,8 @@ font-family: 'Vina Sans', sans-serif;
 .mainPage .sidebar div.sidebarIcon {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 80%;
   margin-top: 10px;
@@ -90,14 +117,17 @@ font-family: 'Vina Sans', sans-serif;
   padding: 7px;
   opacity: 0.8;
 }
+.mainPage .sidebar div.sidebarIcon .top-pip {
+  margin-bottom: 4px;
+}
+.mainPage .sidebar div.sidebarIcon .bottom-pip {
+  margin-top: 4px;
+}
 .mainPage .sidebar div.sidebarIcon .pip {
-  width: 100%;
+  width: 110%;
   height: 10%;
   background-color: #e8d8c3;
   border-radius: 100px;
-}
-.mainPage .sidebar div.sidebarIcon .middle-pip {
-  display: none;
 }
 .mainPage .banner {
   width: 100%;

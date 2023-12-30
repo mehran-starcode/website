@@ -2,6 +2,7 @@
 // -------------------------------------  Imports ----------------------------------------
 import * as DataBase from "./DataBase.js";
 import * as Variables from "./main_Variables.js"
+import * as mainPage from "../mainPage/mainPage.js"
 // ---------------------------------------- Body  -----------------------------------------
 
 
@@ -15,5 +16,5 @@ import * as Variables from "./main_Variables.js"
 
 // ---------------------------------------  Exports  -----------------------------------------
 export {
-    DataBase,Variables
+    DataBase,Variables,mainPage
 }

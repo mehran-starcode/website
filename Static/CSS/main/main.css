@@ -49,30 +49,42 @@ font-family: 'Vina Sans', sans-serif;
     opacity: 0;
   }
 }
-@keyframes margin-bottom-pip---0 {
+@keyframes open-sidebar-icon {
   to {
-    margin-bottom: -2px;
+    border-bottom: none;
+    border-radius: 100% 100% 0 0;
   }
 }
-@keyframes margin-bottom-pip---4px {
+@keyframes close-sidebar-icon {
   from {
-    margin-bottom: 0;
+    border-bottom: rgba(19, 21, 28, 0.7) solid 2px;
+    border-radius: 100% 100% 0 0;
   }
   to {
-    margin-bottom: 4px;
+    border: #e8d8c3 2px solid;
+    border-radius: 100%;
   }
 }
-@keyframes margin-top-pip---0 {
+@keyframes open-sidebar-Cont {
   to {
-    margin-top: -1px;
+    opacity: 1;
+    width: 95vw;
+    height: 85dvh;
   }
 }
-@keyframes margin-top-pip---4px {
-  from {
-    margin-top: 0;
+@keyframes close-sidebar-Cont {
+  0% {
+    width: 95vw;
+    height: 85dvh;
+    opacity: 1;
   }
-  to {
-    margin-top: 4px;
+  20% {
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
 }
 .mainPage .topNavbar {
@@ -80,13 +92,13 @@ font-family: 'Vina Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 7.5%;
+  height: 7.5dvh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 1%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
 }
 .mainPage .topNavbar aside.sidebar { /*  Initialized in its Own File  */ }
 .mainPage .topNavbar a.websiteLogo {
-  width: 40px;
-  height: 40px;
+  width: 5dvh;
+  height: 5dvh;
   border-radius: 100px;
   overflow: hidden;
   margin-top: 4px;
@@ -99,36 +111,82 @@ font-family: 'Vina Sans', sans-serif;
 }
 .mainPage .topNavbar div.profile { /*  Initialized in its Own File  */ }
 
-.mainPage .sidebar {
-  width: 45px;
-  height: 45px;
+.mainPage .mainContSidebar {
+  width: 4.8vh;
+  height: 65%;
+  direction: rtl;
+  margin-top: 1vh;
+  margin-right: 1.7vw;
 }
-.mainPage .sidebar div.sidebarIcon {
+.mainPage .mainContSidebar .sidebar {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 80%;
-  margin-top: 10px;
-  margin-left: -6px;
-  border: #e8d8c3 solid 2px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.mainPage .mainContSidebar .sidebar .sidebarIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: #e8d8c3 2px solid;
   border-radius: 100%;
-  padding: 7px;
-  opacity: 0.8;
+  overflow: hidden;
+  background-color: rgba(19, 21, 28, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
 }
-.mainPage .sidebar div.sidebarIcon .top-pip {
-  margin-bottom: 4px;
+.mainPage .mainContSidebar .sidebar .sidebarIcon .ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 140%;
+  height: 140%;
+  margin: -7px;
 }
-.mainPage .sidebar div.sidebarIcon .bottom-pip {
-  margin-top: 4px;
+.mainPage .mainContSidebar .sidebar .sidebarIcon .hamRotate.active {
+  transform: rotate(45deg);
 }
-.mainPage .sidebar div.sidebarIcon .pip {
-  width: 110%;
-  height: 10%;
-  background-color: #e8d8c3;
-  border-radius: 100px;
+.mainPage .mainContSidebar .sidebar .sidebarIcon .hamRotate180.active {
+  transform: rotate(180deg);
 }
+.mainPage .mainContSidebar .sidebar .sidebarIcon .line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #e8d8c3;
+  stroke-width: 5.5%;
+  stroke-linecap: round;
+}
+.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4 .top {
+  stroke-dasharray: 40% 121%;
+}
+.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4 .bottom {
+  stroke-dasharray: 40% 121%;
+}
+.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4.active .top {
+  stroke-dashoffset: -68%;
+}
+.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4.active .bottom {
+  stroke-dashoffset: -68%;
+}
+.mainPage .mainContSidebar div.sidebarCont {
+  width: 0;
+  height: 0;
+  background-color: rgba(19, 21, 28, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 0;
+  border: #e8d8c3 solid 2px;
+  border-radius: 58% 0% 59% 0%/27% 6% 29% 45%;
+  opacity: 0;
+}
+
 .mainPage .banner {
   width: 100%;
   height: 40vh;
@@ -176,7 +234,7 @@ body div.mainPage div.dynamicCont main div.bestSelling { /*   Initialized in its
 body div.mainPage div.dynamicCont main div.articles { /*   Initialized in its Own File   */ }
 body div.mainPage .bottomNavbar {
   width: 100%;
-  height: 10%;
+  height: 10dvh;
   background-color: blue;
 }
 

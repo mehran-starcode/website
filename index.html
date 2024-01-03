@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir>
 <head>
     <!-- -------- Meta Tags --------- -->
     <meta charset="UTF-8">
@@ -40,17 +40,31 @@
                     </a>
 
                     <!-----------------------   Sidebar   ------------------------------->
-                    <aside class="sidebar">
+                    <div class="mainContSidebar">
 
-                        <div class="sidebarIcon">
-                            <div class="top-pip pip"></div>
-                            <div class="middle-pip pip"></div>
-                            <div class="bottom-pip pip"></div>
+                        <aside class="sidebar">
+
+                            <div class="sidebarIcon">
+                                <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80"
+                                     onclick="this.classList.toggle('active')">
+                                    <path class="line top"
+                                        d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                                    <path class="line middle"
+                                        d="m 70,50 h -40" />
+                                    <path class="line bottom"
+                                        d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+                                </svg>
+                            </div>
+
+
+
+                        </aside>
+
+                        <div class="sidebarCont">
+
                         </div>
-                        <div class="sidebarCont"></div>
 
-                    </aside>
-
+                    </div>
 
                 </div>
 

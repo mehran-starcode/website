@@ -36,31 +36,47 @@
 
 
 
-@keyframes margin-bottom-pip---0 {
+
+@keyframes open-sidebar-icon {
     to{
-        margin-bottom: -2px;
+        border-bottom:none;
+        border-radius:100% 100% 0 0;
     }
 }
-@keyframes margin-bottom-pip---4px {
+@keyframes close-sidebar-icon {
     from{
-        margin-bottom: 0;
+        border-bottom:rgba(19, 21, 28, 0.7) solid 2px;
+        border-radius:100% 100% 0 0;
     }
     to{
-        margin-bottom: 4px;
+        border: $color-light 2px solid;
+        border-radius: 100%;
     }
 }
 
 
-@keyframes margin-top-pip---0 {
+@keyframes open-sidebar-Cont {
     to{
-        margin-top: -1px;
+        opacity: 1;
+        width: 95vw;
+        height: 85dvh;
     }
 }
-@keyframes margin-top-pip---4px {
-    from{
-        margin-top: 0;
+@keyframes close-sidebar-Cont {
+    0%{
+        width: 95vw;
+        height: 85dvh;
+        opacity: 1;
     }
-    to{
-        margin-top: 4px;
+    20%{
+        opacity: 1;
+    }
+    100%{
+        width: 0;
+        height: 0;
+        opacity: 0;
     }
 }
+
+
+

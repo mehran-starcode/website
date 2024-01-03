@@ -1,54 +1,102 @@
 @import "../main/ColorPalettes";
 
-.mainPage .sidebar{
-    width: 45px;
-    height: 45px;
-
+.mainPage .mainContSidebar{
     
+    width: 4.8vh;
+    height: 65%;
+    direction: rtl;
+    margin-top: 1vh;
+    margin-right: 1.7vw;
     
-    //---------------------------------------
-    div.sidebarIcon{
+    .sidebar{
+        
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 80%;
-        margin-top: 10px;
-        margin-left: -6px;
-        border: $color-light solid 2px;
-        border-radius: 100%;
-        padding: 7px;
-        opacity: .8;
-
-        .top-pip{
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        
+        //---------------------------------------
+        //******************************   SVG for hamberger Icon of Sidebar   *************************************
+        .sidebarIcon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border: $color-light 2px solid;
+            border-radius: 100%;
+            overflow: hidden;
+            background-color: rgba(19, 21, 28, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 100;
             
-            margin-bottom: 4px;
-        }
-        .bottom-pip{
             
-            margin-top: 4px;
-        }
-        
-        .pip{
-            width: 110%;
-            height: 10%;
-            background-color: $color-light;
-            border-radius: 100px;
             
+            
+            .ham {
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+                transition: transform 400ms;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                width: 140%;
+                height: 140%;
+                margin: -7px;
+                
+            }
+            .hamRotate.active {
+                transform: rotate(45deg);
+            }
+            .hamRotate180.active {
+                transform: rotate(180deg);
+            }
+            .line {
+                fill:none;
+                transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+                stroke:$color-light;
+                stroke-width:5.5%;
+                stroke-linecap:round;
+                }
+                .ham4 .top {
+                    stroke-dasharray: 40% 121%;
+                }
+                .ham4 .bottom {
+                    stroke-dasharray: 40% 121%;
+                }
+                .ham4.active .top {
+                    stroke-dashoffset: -68%;
+                }
+                .ham4.active .bottom {
+                    stroke-dashoffset: -68%;
+                }
+            }
+        
+        
+        
+        
         }
-        
-        .middle-pip{
-            //display: none;
-        }
-        
-        
-        
-        
-        
-    }
-    div.sidebarCont{
     
+    // *********************************************************************************************************
+    
+    
+    
+    div.sidebarCont{
+        //width: 95vw;
+        //height: 85dvh;
+        width: 0;
+        height: 0;
+        background-color: rgba(19, 21, 28, 0.7);
+        backdrop-filter: blur(10px);
+        z-index: 0;
+        border: $color-light solid 2px;
+        border-radius: 58% 0% 59% 0% / 27% 6% 29% 45% ;
+        opacity: 0;
+        
+
     }
     //---------------------------------------
 }

@@ -41,7 +41,7 @@ font-family: 'Vina Sans', sans-serif;
     opacity: 1;
   }
 }
-@keyframes opacity_to_ziro {
+@keyframes opacity_to_zero {
   from {
     opacity: 1;
   }
@@ -51,25 +51,28 @@ font-family: 'Vina Sans', sans-serif;
 }
 @keyframes open-sidebar-icon {
   to {
-    border-bottom: none;
     border-radius: 100% 100% 0 0;
   }
 }
 @keyframes close-sidebar-icon {
   from {
-    border-bottom: rgba(19, 21, 28, 0.7) solid 2px;
     border-radius: 100% 100% 0 0;
   }
   to {
-    border: #e8d8c3 2px solid;
     border-radius: 100%;
   }
 }
 @keyframes open-sidebar-Cont {
-  to {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
     opacity: 1;
     width: 95vw;
-    height: 85dvh;
+    height: 84.6dvh;
   }
 }
 @keyframes close-sidebar-Cont {
@@ -78,13 +81,48 @@ font-family: 'Vina Sans', sans-serif;
     height: 85dvh;
     opacity: 1;
   }
-  20% {
+  90% {
     opacity: 1;
   }
   100% {
     width: 0;
     height: 0;
     opacity: 0;
+  }
+}
+@keyframes radius-to-60 {
+  to {
+    border-radius: 0 0 60% 0;
+  }
+}
+@keyframes radius-to-zero {
+  from {
+    border-radius: 0 0 60% 0;
+  }
+  to {
+    border-radius: 0;
+  }
+}
+@keyframes magnifier-website-logo {
+  to {
+    top: 5vh;
+    left: 8vw;
+    width: 13vh;
+    height: 13vh;
+  }
+}
+@keyframes shrinker-website-logo {
+  from {
+    top: 5vh;
+    left: 8vw;
+    width: 13vh;
+    height: 13vh;
+  }
+  to {
+    top: 0.7vh;
+    left: 47vw;
+    width: 5dvh;
+    height: 5dvh;
   }
 }
 .mainPage .topNavbar {
@@ -95,51 +133,62 @@ font-family: 'Vina Sans', sans-serif;
   height: 7.5dvh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 1%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
 }
-.mainPage .topNavbar aside.sidebar { /*  Initialized in its Own File  */ }
+.mainPage .topNavbar div.profile { /*  Initialized in its Own File  */ }
 .mainPage .topNavbar a.websiteLogo {
+  position: absolute;
+  top: 0.7vh;
+  left: 47vw;
   width: 5dvh;
   height: 5dvh;
   border-radius: 100px;
   overflow: hidden;
-  margin-top: 4px;
+  z-index: 1;
 }
 .mainPage .topNavbar a.websiteLogo img {
   width: 100%;
   height: 100%;
-  opacity: 0.7;
-  background-color: green;
+  opacity: 0.9;
 }
-.mainPage .topNavbar div.profile { /*  Initialized in its Own File  */ }
+.mainPage .topNavbar div.sidebarMainCont { /*  Initialized in its Own File  */ }
 
-.mainPage .mainContSidebar {
-  width: 4.8vh;
-  height: 65%;
+.mainPage .sidebarMainCont {
+  width: 9.6vh;
+  height: 4.8vh;
   direction: rtl;
   margin-top: 1vh;
   margin-right: 1.7vw;
 }
-.mainPage .mainContSidebar .sidebar {
+.mainPage .sidebarMainCont div.sidebarIconCont {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  direction: ltr;
   width: 100%;
   height: 100%;
-  z-index: 100;
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIconPreDiv {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIconPreDiv div.higherLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: rgba(19, 21, 28, 0.66) solid 10px;
+}
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  border: #e8d8c3 2px solid;
   border-radius: 100%;
   overflow: hidden;
-  background-color: rgba(19, 21, 28, 0.7);
+  background-color: rgba(19, 21, 28, 0.64);
   backdrop-filter: blur(10px);
   z-index: 100;
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .ham {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
@@ -151,38 +200,38 @@ font-family: 'Vina Sans', sans-serif;
   height: 140%;
   margin: -7px;
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .hamRotate.active {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .hamRotate.active {
   transform: rotate(45deg);
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .hamRotate180.active {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .hamRotate180.active {
   transform: rotate(180deg);
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .line {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: #e8d8c3;
   stroke-width: 5.5%;
   stroke-linecap: round;
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4 .top {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .ham4 .top {
   stroke-dasharray: 40% 121%;
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4 .bottom {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .ham4 .bottom {
   stroke-dasharray: 40% 121%;
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4.active .top {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .ham4.active .top {
   stroke-dashoffset: -68%;
 }
-.mainPage .mainContSidebar .sidebar .sidebarIcon .ham4.active .bottom {
+.mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon .ham4.active .bottom {
   stroke-dashoffset: -68%;
 }
-.mainPage .mainContSidebar div.sidebarCont {
+.mainPage .sidebarMainCont div.sidebarCont {
   width: 0;
   height: 0;
   background-color: rgba(19, 21, 28, 0.7);
   backdrop-filter: blur(10px);
   z-index: 0;
-  border-radius: 58% 0% 59% 0%/27% 6% 29% 45%;
+  border-radius: 58% 0 59% 0/27% 6% 29% 45%;
   opacity: 0;
 }
 

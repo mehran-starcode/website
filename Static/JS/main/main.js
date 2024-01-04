@@ -13,7 +13,6 @@ import * as mainPage from "../mainPage/mainPage.js"
 
 
 
-
 // ---------------------------------------  Exports  -----------------------------------------
 export {
     DataBase,Variables,mainPage

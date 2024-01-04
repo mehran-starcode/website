@@ -1,3 +1,5 @@
+@import "ColorPalettes";
+
 @keyframes fullScreen {
     to{
         width: 6000px;
@@ -25,7 +27,7 @@
         opacity: 1;
     }
 }
-@keyframes opacity_to_ziro {
+@keyframes opacity_to_zero {
     from{
         opacity: 1;
     }
@@ -39,27 +41,30 @@
 
 @keyframes open-sidebar-icon {
     to{
-        border-bottom:none;
         border-radius:100% 100% 0 0;
     }
 }
 @keyframes close-sidebar-icon {
     from{
-        border-bottom:rgba(19, 21, 28, 0.7) solid 2px;
         border-radius:100% 100% 0 0;
     }
     to{
-        border: $color-light 2px solid;
         border-radius: 100%;
     }
 }
 
 
 @keyframes open-sidebar-Cont {
-    to{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    100%{
         opacity: 1;
         width: 95vw;
-        height: 85dvh;
+        height: 84.6dvh;
     }
 }
 @keyframes close-sidebar-Cont {
@@ -68,7 +73,7 @@
         height: 85dvh;
         opacity: 1;
     }
-    20%{
+    90%{
         opacity: 1;
     }
     100%{
@@ -77,6 +82,51 @@
         opacity: 0;
     }
 }
+
+
+
+@keyframes radius-to-60 {
+    to{
+        border-radius:  0 0 60% 0;
+    }
+}
+@keyframes radius-to-zero {
+    from{
+        border-radius:  0 0 60% 0;
+    }
+    to{
+        border-radius: 0;
+    }
+}
+
+
+
+
+
+@keyframes magnifier-website-logo {              // بزرگ کردن و تغییر جایگاه لوگو
+    to{
+        top: 5vh;
+        left: 8vw;
+        width: 13vh;
+        height: 13vh;
+    }
+}
+@keyframes shrinker-website-logo {               // کوچک کردن و تغییر جایگاه لوگو
+    from{
+        top: 5vh;
+        left: 8vw;
+        width: 13vh;
+        height: 13vh;
+    }
+    to{
+        top: .7vh;
+        left: 47vw;
+        width: 5dvh;
+        height: 5dvh;
+    }
+}
+
+
 
 
 

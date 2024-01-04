@@ -17,7 +17,7 @@ const websiteLogoImage_EL = document.querySelector('.mainPage img.websiteLogoIma
 const websiteLogoImage_ST = getComputedStyle(websiteLogoImage_EL);
 
 //***************************************   sidebar    *****************************************          sidebar
-const sidebar_EL = document.querySelector('.mainPage aside.sidebar');
+const sidebar_EL = document.querySelector('.mainPage div.sidebarMainCont');
 const sidebar_ST = getComputedStyle(sidebar_EL);
 
 

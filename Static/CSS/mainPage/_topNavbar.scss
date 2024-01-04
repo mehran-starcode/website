@@ -13,22 +13,26 @@
     
     
     //---------------------------------------
-    aside.sidebar{/*  Initialized in its Own File  */}
+    div.profile{/*  Initialized in its Own File  */}
     a.websiteLogo{
+        position: absolute;
+        top: .7vh;
+        left: 47vw;
         width: 5dvh;
         height: 5dvh;
         border-radius: 100px;
         overflow: hidden;
-        margin-top: 4px;
+        z-index: 1;
+        
+        
         //---------------------------------------
             img{
                 width: 100%;
                 height: 100%;
-                opacity: .7;
-                background-color: green;
+                opacity: .9;
             }
         //---------------------------------------
         }
-    div.profile{/*  Initialized in its Own File  */}
+    div.sidebarMainCont{/*  Initialized in its Own File  */}
     //---------------------------------------
 }

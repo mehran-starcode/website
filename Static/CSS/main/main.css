@@ -82,7 +82,7 @@ font-family: 'Vina Sans', sans-serif;
     height: 85dvh;
     opacity: 1;
   }
-  90% {
+  40% {
     opacity: 1;
   }
   100% {
@@ -166,16 +166,15 @@ font-family: 'Vina Sans', sans-serif;
   height: 100%;
 }
 .mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIconPreDiv {
-  position: relative;
   width: 50%;
   height: 100%;
   overflow: hidden;
 }
 .mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIconPreDiv div.higherLayer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  outline: rgba(19, 21, 28, 0.66) solid 10px;
+  width: 105%;
+  height: 105%;
+  margin: -2% 0 0 -1%;
+  outline: rgba(19, 21, 28, 0.66) solid 4vh;
 }
 .mainPage .sidebarMainCont div.sidebarIconCont div.sidebarIcon {
   display: flex;
